@@ -96,14 +96,14 @@ public class MD360Renderer implements GLSurfaceView.Renderer {
 		List<MD360Director> directors = mProjectionModeManager.getDirectors();
 
 		// main plugin
-		MDAbsPlugin mainPlugin = mProjectionModeManager.getMainPlugin();//MDPanoramaPlugin
+		MDAbsPlugin mainPlugin = mProjectionModeManager.getMainPlugin();
 		if (mainPlugin != null){
 			mainPlugin.setupInGL(mContext);
 			mainPlugin.beforeRenderer(this.mWidth, this.mHeight);
 		}
 
 		for (MDAbsPlugin plugin : mPluginManager.getPlugins()) {
-			plugin.setupInGL(mContext);//ProjectionModeManager...Manager
+			plugin.setupInGL(mContext);
 			plugin.beforeRenderer(this.mWidth, this.mHeight);
 		}
 

@@ -45,11 +45,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:singleLine="true"
+                android:layout_marginTop="10dp"
                 android:text="@{data.title}"
                 android:textColor="#de000000"
-                android:textSize="17sp" />
+                android:textSize="17sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -57,15 +57,14 @@
                 android:layout_marginTop="5dp"
                 android:text="@{data.durationShow}"
                 android:textColor="#8a8a8a"
-                android:textSize="14sp" />
-
+                android:textSize="14sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="@{data.fileLength}"
                 android:textColor="#8a8a8a"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
         </LinearLayout>
 
     </LinearLayout>

@@ -197,9 +197,9 @@ public class MD360Director {
     }
 
     private void updateCameraMatrix() {
-        final float eyeX = mCamera.getEyeX() + mCameraUpdate.getEyeX()-2.0f;
+        final float eyeX = mCamera.getEyeX() + mCameraUpdate.getEyeX();
         final float eyeY = mCamera.getEyeY() + mCameraUpdate.getEyeY();
-        final float eyeZ = mCamera.getEyeZ() + mCameraUpdate.getEyeZ()-2.0f;
+        final float eyeZ = mCamera.getEyeZ() + mCameraUpdate.getEyeZ();
         final float lookX = mCamera.getLookX() + mCameraUpdate.getLookX();
         final float lookY = mCamera.getLookY() + mCameraUpdate.getLookY();
         final float lookZ = -1.0f;
