@@ -99,34 +99,7 @@ public class MDPlane extends MDAbsObject3D {
             }
         }
 
-//        float[] vertexs = new float[54];
-//        addVertex(0.f, 0.f, 3.16987f, 0, vertexs);//O
-//        addVertex(-5.f, 0.f, -1.830127f, 1, vertexs);//A
-//        addVertex(0.f, -5.f, -1.830127f, 2, vertexs);//D
-//        addVertex(0.f, 0.f, 3.16987f, 3, vertexs);//O
-//        addVertex(0.f, -5.f, -1.830127f, 4, vertexs);//D
-//        addVertex(5.f, 0.f, -1.830127f, 5, vertexs);//C
-//        addVertex(0.f, 0.f, 3.16987f, 6, vertexs);//O
-//        addVertex(5.f, 0.f, -1.830127f, 7, vertexs);//C
-//        addVertex(0.f, 5.f, -1.830127f, 8, vertexs);//B
-//        addVertex(0.f, 0.f, 3.16987f, 9, vertexs);//O
-//        addVertex(0.f, 5.f, -1.830127f, 10, vertexs);//B
-//        addVertex(-5.f, 0.f, -1.830127f, 11, vertexs);//A
-//        addVertex(0.f, 5.f, -1.830127f, 12, vertexs);//B
-//        addVertex(-5.f, 0.f, -1.830127f, 13, vertexs);//A
-//        addVertex(0.f, -5.f, -1.830127f, 14, vertexs);//D
-//        addVertex(0.f, 5.f, -1.830127f, 15, vertexs);//B
-//        addVertex(0.f, -5.f, -1.830127f, 16, vertexs);//D
-//        addVertex(5.f, 0.f, -1.830127f, 17, vertexs);//C
-
         return vertexs;
-    }
-
-    void addVertex(float x, float y, float z, int index, float[] vertexs)
-    {
-        vertexs[index*3] = x;
-        vertexs[index*3 + 1] = y;
-        vertexs[index*3 + 2] = z;
     }
 
     private float[] generateTexcoords(){

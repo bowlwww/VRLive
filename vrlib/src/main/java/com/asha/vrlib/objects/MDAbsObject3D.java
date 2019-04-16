@@ -19,7 +19,7 @@ public abstract class MDAbsObject3D {
     private static final int sPositionDataSize = 3;
     private static final int sTextureCoordinateDataSize = 2;
 
-    private ShortBuffer mIndicesBuffer = null;
+    private ShortBuffer mIndicesBuffer;
     private int mNumIndices;
 
     private SparseArray<FloatBuffer> mTexCoordinateBuffers = new SparseArray<>(2);
