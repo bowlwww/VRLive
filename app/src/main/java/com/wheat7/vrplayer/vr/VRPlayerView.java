@@ -72,7 +72,7 @@ public class VRPlayerView extends FrameLayout implements VRMediaController.VRCon
     private void initVRLibrary() {
         // new instance
         mVRLibrary = MDVRLibrary.with(getContext())
-                .displayMode(MDVRLibrary.DISPLAY_MODE_GLASS)
+                .displayMode(MDVRLibrary.DISPLAY_MODE_NORMAL)
                 .interactiveMode(MDVRLibrary.INTERACTIVE_MODE_CARDBORAD_MOTION)
                 .projectionMode(MDVRLibrary.PROJECTION_MODE_SPHERE)
                 .pinchConfig(new MDPinchConfig().setDefaultValue(0.7f).setMin(0.5f))
