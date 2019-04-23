@@ -1,48 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#8a8a8a"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_alignParentRight="true"
+            android:text="播放"/>
 
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/ic_app" />
+        <EditText
+            android:id="@+id/inputUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="rtsp://192.168.3.26:8554/test.264"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/play"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="VRPlayer"
-                android:textColor="#FFFFFF"
-                android:textSize="21sp" />
-        </android.support.v7.widget.Toolbar>
-
-        <android.support.v4.widget.SwipeRefreshLayout
-            android:id="@+id/swipe_refresh"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycler"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
-
-        </android.support.v4.widget.SwipeRefreshLayout>
-
-
-    </LinearLayout>
+    </RelativeLayout>
 </layout>

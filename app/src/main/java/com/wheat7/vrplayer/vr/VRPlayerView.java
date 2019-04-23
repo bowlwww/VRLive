@@ -91,7 +91,8 @@ public class VRPlayerView extends FrameLayout implements VRMediaController.VRCon
                     }
                 })
                 .build(mGLSurfaceView);
-        mVRLibrary.setAntiDistortionEnabled(true);
+        mVRLibrary.switchDisplayMode(getContext(), MDVRLibrary.DISPLAY_MODE_NORMAL);
+        mVRLibrary.setAntiDistortionEnabled(false);
     }
 
     public AbstractMediaPlayer getMediaPlayer() {
