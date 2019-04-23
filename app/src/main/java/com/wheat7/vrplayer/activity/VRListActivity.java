@@ -42,7 +42,8 @@ public class VRListActivity extends BaseActivity<ActivityVrListBinding>{
         getBinding().play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent.putExtra("path", getBinding().inputUrl.getText().toString().trim());
+                String url = getBinding().inputUrl.getText().toString();
+                intent.putExtra("path", url);
                 startActivity(intent);
             }
         });
