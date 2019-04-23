@@ -28,8 +28,8 @@ public class VRPlayerActivity extends BaseActivity<ActivityVrPlayerBinding> {
     public void initView(Bundle savedInstanceState) {
         getBinding().setActivity(this);
         Intent intent = getIntent();
-        String urlStr = intent.getStringExtra("path");
-        getBinding().player.setVideoPath("rtsp://192.168.3.26:8554/test.264");
+        String urlStr = intent.getStringExtra("path").trim();
+        getBinding().player.setVideoPath(urlStr) ;
         getBinding().player.setMediaControllerTitle(getBinding().mediacontrollerTitle);
     }
 

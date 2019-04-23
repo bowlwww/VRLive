@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:hint="rtsp://192.168.3.26:8554/test.264"
+            android:text="rtsp://192.168.3.26:8554/test.264"
             android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@+id/play"/>
 
